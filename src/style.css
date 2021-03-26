@@ -1,0 +1,47 @@
+:root {
+  --element-height: 70vh;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.abs_cont {
+  position: relative;
+}
+
+.base {
+  height: calc(var(--element-height));
+  max-height: 100%;
+  max-width: 100%;
+  width: calc(var(--element-height) * 0.437);
+}
+
+.colorer,
+.layer_size {
+  height: calc(var(--element-height));
+  object-fit: contain;
+  width: calc(var(--element-height) * 0.437);
+  /* max-width: 378px;
+  max-height: 865px; */
+}
+
+.fixed_asset {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.ambient_occlusion {
+  mix-blend-mode: multiply;
+}
+
+.shadow {
+  mix-blend-mode: multiply;
+}
+
+.specular {
+  mix-blend-mode: screen;
+}
