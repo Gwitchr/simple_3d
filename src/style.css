@@ -1,9 +1,11 @@
 :root {
-  --element-height: 70vh;
+  --element-height: 80vh;
 }
 
 body {
   font-family: sans-serif;
+  background: radial-gradient(#181845, #13002a);
+  color:white;
 }
 
 .abs_cont {
@@ -27,21 +29,50 @@ body {
 }
 
 .fixed_asset {
+  /* background-color: #3908ad; */
   position: absolute;
-  top: 0;
+  top: 10vh;
   bottom: 0;
-  left: 0;
+  left: 65%;
   right: 0;
+  user-select: none;
 }
 
 .ambient_occlusion {
   mix-blend-mode: multiply;
 }
 
-.shadow {
+.shadows {
   mix-blend-mode: multiply;
 }
 
 .specular {
   mix-blend-mode: screen;
+}
+
+.img-selection{
+  background-color: black;
+  width: 3vw;
+  height: 4vh;
+  border: black 0.3vh solid;
+  border-radius: 0 10px 0 10px;
+  cursor: pointer;
+}
+
+.img-selection:hover{
+  border: red 0.25vh solid;
+}
+
+.container-12pzas{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.container-5pzas{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-items: center;
+  align-items: center;
 }
